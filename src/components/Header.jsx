@@ -4,7 +4,7 @@ import {HiOutlineArrowNarrowRight, HiOutlinePhone, HiOutlineMail} from 'react-ic
 import { FaGithub, FaLinkedin, FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 import { Transition } from "@headlessui/react";
 import { Link } from "react-scroll";
-import photo_1 from '../assets/photo_1.jpg'
+import photo_1 from '../assets/photo_3.jpg'
 
 export default function Header() {
   const [isMenuOpen, setMenuOpen] = useState(false);
