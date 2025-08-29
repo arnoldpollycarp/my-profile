@@ -24,7 +24,7 @@ export default function Header() {
                 <span class="self-center font-semibold whitespace-nowrap dark:text-white">P.</span>
                 <span class="self-center font-semibold whitespace-nowrap dark:text-white">OKELLO</span>                  
             </div>     
-            <div class="text-sm text-white font-bold dark:text-white">Fullstack Web Developer</div>
+            <div class="text-sm text-white font-bold dark:text-white">Fullstack Developer</div>
             <div class = "text-gray-500 text-sm">
               Crafting UI and slaying APIs.
             </div>  
@@ -48,7 +48,7 @@ export default function Header() {
                     <span class="self-center font-semibold whitespace-nowrap dark:text-white">P.</span>
                     <span class="self-center font-semibold whitespace-nowrap dark:text-white">OKELLO</span>                  
                   </div>
-                  <div class="text-sm text-white font-bold dark:text-white">Fullstack Web Developer</div>
+                  <div class="text-sm text-white font-bold dark:text-white">Fullstack Developer</div>
                   <div class = "text-gray-500">
                     Crafting UI and slaying APIs.
                   </div>
@@ -70,19 +70,32 @@ export default function Header() {
                         <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
+                        Python (Flask/Django)
+                    </li>
+                    <li class="flex items-center">
+                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                        </svg>
                         React.Js, Node.Js, REST APIs 
                     </li>
                     <li class="flex items-center">
                         <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
-                        MongoDB, MySQL
+                        MongoDB, MySQL, PostgreSQL
                     </li>
                     <li class="flex items-center">
                         <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
                         </svg>
                         Cloud Computing (AWS)
+                    </li>
+
+                    <li class="flex items-center">
+                        <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                        </svg>
+                        Writing, Transcription, Data Annotation
                     </li>
                   </ul>
                   <div class="inline-flex items-center justify-center w-full">
