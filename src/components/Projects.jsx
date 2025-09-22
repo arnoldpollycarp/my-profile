@@ -10,7 +10,7 @@ import { button } from 'framer-motion/client'
 export default function Projects() {
   // pagenation state 
   const [currentPage, setcurrentPage] = useState(1);
-  const itemsPerPage = 3;
+  const itemsPerPage = 4;
 
   const projectsList = [
     {
@@ -18,35 +18,64 @@ export default function Projects() {
     Description: "Thamni On is a real time supplyin system aimed at curbing the issues on bulk break and payment in the retail space. The system entailed merging manufacturers, wholesalers and retailers ensuring they can easily manage their stock and sales on a real time basis.",
     userNum: "2000",
     languagesUsed: ["Node Js", "React Js", "MongoDB"],
-    image: thamani
+    image: thamani,
+    link: "https://thamanionline.com/",
     },
     {
     name: "GS1 Kenya ERP",
     Description: "GS1 Kenya ERP is a web based application that serves GS1 kenya's staff and customers in barcode management. Additionally, it acts as the organisations internal staff management system.",
     userNum: "3000",
     languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
-    image: gs1kenya
+    image: gs1kenya,
+    link: "https://gs1kenya.org/",
     },
     {
     name: "Shamba Connect",
     Description: "Shamba Connect was designed to help the low level farmers in rural Kenya. The idea is to allow the farmer to have access to the larger amrket and all it's benefits eliminating the middleman and their disadvantages.",
     userNum: "500",
     languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
-    image: sconnect
+    image: sconnect,
+    link: "https://shambaikonet.com/",
+    },
+    {
+    name: "Quick Drapp",
+    Description: "Garage Gem is an online tool aimed to help garage owners run their paces of busins. It captures Customer activities within the the garage, from making their car issues known to payment.",
+    userNum: "100",
+    languagesUsed: ["Python (Flask)", "React Js", "MySQL"],
+    image: quickdrapp,
+    link: "https://github.com/arnoldpollycarp/quickdrap",
     },
     {
     name: "Garage Gem",
     Description: "Garage Gem is an online tool aimed to help garage owners run their paces of busins. It captures Customer activities within the the garage, from making their car issues known to payment.",
     userNum: "100",
     languagesUsed: ["Node Js", "React Js", "MongoDB"],
-    image: garageImg
+    image: garageImg,
+    link: "https://github.com/arnoldpollycarp/GarageMS",
     },
     {
-    name: "Quick Drapp",
-    Description: "Garage Gem is an online tool aimed to help garage owners run their paces of busins. It captures Customer activities within the the garage, from making their car issues known to payment.",
-    userNum: "100",
-    languagesUsed: ["Node Js", "React Js", "MongoDB"],
-    image: quickdrapp
+    name: "Sky Tech",
+    Description: "Designed to link Kenya Labor force to the USA Market. Allowed clients with ready remote jobs to link with clients in the kenyan space.",
+    userNum: "500",
+    languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
+    image: sconnect,
+    link: "https://github.com/arnoldpollycarp/skytech",
+    },
+    {
+    name: "ScanIT",
+    Description: "Low level barcodes generation system for retailers who used the codes for a one off business.",
+    userNum: "500",
+    languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
+    image: sconnect,
+    link: "https://github.com/arnoldpollycarp/ScanIT",
+    },
+    {
+    name: "ACES KU",
+    Description: "Simple website for the Kenyatta University Engineering school.",
+    userNum: "500",
+    languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
+    image: sconnect,
+    link: "https://acesweb.netlify.app/",
     },  
   ]
 
@@ -69,7 +98,7 @@ export default function Projects() {
                  <img src={item.image} className=" h-62 w-64 rounded-sm" alt="Logo" />
                </div>
                <div>
-                 <a href="https:thamanionline.com/" className='font-extrabold flex flex-row gap-x-2 text-white'>{item.name} <HiArrowCircleRight className='pt-1' /></a>
+                 <a href={item.link} className='font-extrabold flex flex-row gap-x-2 text-white'>{item.name} <HiArrowCircleRight className='pt-1' /></a>
                  <ul className=' list-none'>
                    <li className='text-gray-400'>{item.Description}</li>
                    <li className='flex flex-row gap-x-2'>

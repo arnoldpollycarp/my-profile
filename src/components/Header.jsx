@@ -41,7 +41,7 @@ export default function Header() {
           <aside class="fixed top-0 left-0 z-40 sm:w-80 h-screen transition-transform -translate-x-full sm:translate-x-0" aria-label="Sidebar">
             <div class="h-full px-3 py-8 overflow-y-auto bg-gray-50 dark:bg-gray-800">
               <div class="items-center space-y-2">
-                <img class="w-20 h-20 rounded-full" src={photo_1} alt="" />
+                <img class="rounded-full w-32 h-32" src={photo_1} alt="" />
                   <div class = "flex flex-row space-x-2 text-3xl">
                     <img src={logo} className="h-8 rounded-md" alt="Logo" />
                     <span class="self-center font-semibold whitespace-nowrap dark:text-white">RNOLD</span>
