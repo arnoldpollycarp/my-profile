@@ -5,6 +5,9 @@ import gs1kenya from '../assets/gs1kenya.png'
 import sconnect from '../assets/shambaconnect.png'
 import garageImg from '../assets/garage.png'
 import quickdrapp from '../assets/quickdrapp.png'
+import skytech from '../assets/TestLogo.svg'
+import scanIt from '../assets/scanIT.png'
+import aces_ku from '../assets/KU_LOGO_2.png'
 import { button } from 'framer-motion/client'
 
 export default function Projects() {
@@ -30,8 +33,8 @@ export default function Projects() {
     link: "https://gs1kenya.org/",
     },
     {
-    name: "Shamba Connect",
-    Description: "Shamba Connect was designed to help the low level farmers in rural Kenya. The idea is to allow the farmer to have access to the larger amrket and all it's benefits eliminating the middleman and their disadvantages.",
+    name: "Shamba iko Net",
+    Description: "Shamba iko Net was designed to help the low level farmers in rural Kenya. The idea is to allow the farmer to have access to the larger amrket and all it's benefits eliminating the middleman and their disadvantages.",
     userNum: "500",
     languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
     image: sconnect,
@@ -58,7 +61,7 @@ export default function Projects() {
     Description: "Designed to link Kenya Labor force to the USA Market. Allowed clients with ready remote jobs to link with clients in the kenyan space.",
     userNum: "500",
     languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
-    image: sconnect,
+    image: skytech,
     link: "https://github.com/arnoldpollycarp/skytech",
     },
     {
@@ -66,7 +69,7 @@ export default function Projects() {
     Description: "Low level barcodes generation system for retailers who used the codes for a one off business.",
     userNum: "500",
     languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
-    image: sconnect,
+    image: scanIt,
     link: "https://github.com/arnoldpollycarp/ScanIT",
     },
     {
@@ -74,7 +77,7 @@ export default function Projects() {
     Description: "Simple website for the Kenyatta University Engineering school.",
     userNum: "500",
     languagesUsed: ["Elixir (Phoenix)", "MySQL", "HTML5", "CSS3", "Js"],
-    image: sconnect,
+    image: aces_ku,
     link: "https://acesweb.netlify.app/",
     },  
   ]
