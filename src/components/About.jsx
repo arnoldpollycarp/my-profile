@@ -1,17 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
+
+// Move stats outside the component so it doesn't reinitialize on each render
+const stats = [
+  { label: 'Years of Experience', target: 5 },
+  { label: 'Projects Completed', target: 20 },
+  { label: 'Happy Clients', target: 15 },
+];
 
 export default function About() {
+  const [count, setCount] = useState(stats.map(() => 0));
+
+  useEffect(() => {
+    const duration = 2000; // total animation time
+    let startTime = null;
+
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+
+      const newCounts = stats.map((stat) => Math.floor(progress * stat.target));
+      setCount(newCounts);
+
+      if (progress < 1) requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+  }, []); 
+
   return (
-    <div id="about" className="text-black p-10">
-       <div className="max-w-6xl">
-        <p className='text-5xl md:text-4xl font-extrabold'>About Me</p>
-        <p className='flex flex-col gap-4'>
-        <span>I am a full-stack developer passionate about building scalable, high-performance web applications that seamlessly blend design and engineering. With expertise in front-end development, accessibility, and backend architecture, I create intuitive, inclusive, and efficient digital experiences.</span>  
-        <span>Previously, I worked as an Engineer at Adept Technologies Limited, where I developed and maintained robust UI components and backend systems that power the platform. My focus includes web accessibility, API development, performance optimization, and scalable architecture to ensure seamless user interactions.</span>  
-        <span>Throughout my career, I’ve worked across enterprise companies, start-ups, and digital product studios, gaining a diverse range of experience in different development environments.</span>  
-        <span>Outside of work, I enjoy hiking, reading, spending time with family, and working on the farm.</span> 
-        </p>
-       </div>     
+    <div className='text-white pt-6 pb-6 space-y-4 flex flex-col items-center text-center' id='about'>
+      <h1 className='text-3xl text-[clamp(1rem,5vw,3rem)] font-bold'>About Me</h1>
+
+      <p className='mb-3 text-gray-400 max-w-3xl'>
+        Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.
+      </p>
+
+      {/* stat cards */}
+      <div className='flex flex-row flex-wrap justify-center items-center gap-4'>
+        {stats.map((stat, index) => (
+          <div
+            key={index}
+            className="flex flex-col justify-center items-center gap-4 bg-slate-900 p-6 rounded-2xl border border-transparent transform transition-all duration-300 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-lg hover:shadow-blue-400/20 hover:border-blue-400/30 hover:ring-4 hover:ring-blue-400/20"
+          >
+            <p className="text-2xl text-blue-300">{count[index]}+</p>
+            <p>{stat.label}</p>
+          </div>
+        ))}
+      </div>
     </div>
-  )
+  );
 }
