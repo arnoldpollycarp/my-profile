@@ -1,8 +1,9 @@
 import React from 'react'
 import Hero_image from '../assests/photo_1.png'
-import { FaFacebook, FaGoogle, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
+import { FaFacebook, FaGoogle, FaLinkedin, FaGithub, FaInstagram, FaDownload } from "react-icons/fa";
 import { motion } from "framer-motion";
 import logo from '../assests/a_logo.png'
+import cv from '../assests/Arnold_Polycarp_Okello_resume.pdf'
 
 export default function Hero() {
   const socialsList = [
@@ -56,7 +57,9 @@ export default function Hero() {
             className="border-2 border-white py-2 rounded-full w-[200px] mx-auto md:mx-0 hover:text-black hover:bg-white transition"
             data-aos="zoom-in"
           >
-            <a href="">Download CV</a>  
+            <a href={cv} download className="flex items-center justify-center">
+              <FaDownload className="mr-2" /> Download CV
+            </a>
           </button>
         </div>
 
