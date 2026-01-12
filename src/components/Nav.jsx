@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { li } from 'framer-motion/client'
 import { Link } from "react-scroll";
-
+import logo from '../assests/a_logo.png'
 
 export default function Nav() {
   const [open, setOpen] = useState(false)
@@ -19,9 +19,13 @@ export default function Nav() {
       <nav className="flex justify-between items-center text-white">
 
         {/* Logo */}
-        <h1 data-aos="zoom-in" className="text-xl font-bold">
-          Faith Waigi
-        </h1>
+        <div class = "flex flex-row space-x-2 text-lg text-[clamp(1.5rem,6vw,3rem)] tracking-widest" data-aos="fade-right"
+                    data-aos-delay="500">
+                      <img src={logo} className="h-8 rounded-md" alt="Logo" />
+                        <span class="self-center font-semibold whitespace-nowrap dark:text-white">RNOLD</span>
+                        <span class="self-center font-semibold whitespace-nowrap dark:text-white">P.</span>
+                        <span className="self-center font-semibold whitespace-nowrap text-blue-300">OKELLO</span>                  
+                    </div>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6 text-lg font-semibold">
