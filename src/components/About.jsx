@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 const stats = [
   { label: 'Years of Experience', target: 5 },
   { label: 'Projects Completed', target: 20 },
-  { label: 'Happy Clients', target: 15 },
+  { label: 'Happy Clients', target: 20 },
 ];
 
 export default function About() {
@@ -32,7 +32,11 @@ export default function About() {
       <h1 className='text-3xl text-[clamp(1rem,5vw,3rem)] font-bold'>About Me</h1>
 
       <p className='mb-3 text-gray-400 max-w-3xl'>
-        Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.
+        Backend Engineer with 5+ years of experience building scalable, high-performance applications.
+        Specialized in Node.js, MongoDB, MySQL, and API design, with a strong focus on system scalability,
+        concurrency handling, and customer-centric solutions. Experienced in remote-first collaboration,
+        mentoring teams, and driving business-focused engineering outcomes. Passionate about building
+        infrastructure that powers the future of global work.
       </p>
 
       {/* stat cards */}

@@ -1,15 +1,17 @@
 import React from 'react'
 import Hero_image from '../assests/photo_1.png'
-import { FaFacebook, FaGoogle, FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaGoogle, FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { motion } from "framer-motion";
+import logo from '../assests/a_logo.png'
 
 export default function Hero() {
   const socialsList = [
-    { name: 'Facebook', href: 'https://www.facebook.com/faith.waigi.7', icon: <FaFacebook />, delay: 500 },
-    { name: 'Gmail', href: 'mailto:faith@gmail.com', icon: <FaGoogle />, delay: 700 },
     { name: 'LinkedIn', href: 'https://www.linkedin.com/', icon: <FaLinkedin />, delay: 900 },
     { name: 'GitHub', href: 'https://github.com/', icon: <FaGithub />, delay: 1000 },
-    { name: 'Twitter', href: 'https://twitter.com/', icon: <FaTwitter />, delay: 1200 },
+    { name: 'Gmail', href: 'mailto:arnoldpollycarp@gmail.com', icon: <FaGoogle />, delay: 700 },
+    { name: 'Facebook', href: 'https://www.facebook.com/clint.milner.733/', icon: <FaFacebook />, delay: 500 },
+    { name: 'Instagram', href: 'https://www.instagram.com/arnold_pollycarp/', icon: <FaInstagram />, delay: 600 },
+    
   ]
 
   return (
@@ -21,17 +23,16 @@ export default function Hero() {
           <p className="tracking-widest" data-aos="fade-up">
             Hello, my name is
           </p>
-
-          <h1
-            className="text-[clamp(1.5rem,6vw,3rem)] tracking-widest"
-            data-aos="fade-right"
-            data-aos-delay="500"
-          >
-            Faith <span className="text-blue-300">Waigi</span>
-          </h1>
+          <div class = "flex flex-row space-x-2 text-2xl text-[clamp(1.5rem,6vw,3rem)] tracking-widest" data-aos="fade-right"
+            data-aos-delay="500">
+              <img src={logo} className="h-10 rounded-md" alt="Logo" />
+                <span class="self-center font-semibold whitespace-nowrap dark:text-white">RNOLD</span>
+                <span class="self-center font-semibold whitespace-nowrap dark:text-white">P.</span>
+                <span className="text-blue-300">OKELLO</span>                  
+            </div>
 
           <p className="tracking-widest text-lg md:text-xl">
-            I'm a <span className="text-blue-300">Web Developer</span>
+            I'm a <span className="text-blue-300">Software Developer/Engineer</span>
           </p>
 
           {/* Socials */}
@@ -55,7 +56,7 @@ export default function Hero() {
             className="border-2 border-white py-2 rounded-full w-[200px] mx-auto md:mx-0 hover:text-black hover:bg-white transition"
             data-aos="zoom-in"
           >
-            Download CV
+            <a href="">Download CV</a>  
           </button>
         </div>
 
@@ -75,7 +76,7 @@ export default function Hero() {
             className="relative z-10 w-48 md:w-60 h-auto object-cover"
             animate={{ y: [0, -12, 0] }}
             transition={{
-              duration: 3,
+              duration: 4,
               ease: "easeInOut",
               repeat: Infinity,
             }}
