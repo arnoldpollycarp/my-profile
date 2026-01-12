@@ -7,6 +7,12 @@ import ku from '../assests/KU_LOGO_2.png'
 import skytech from '../assests/TestLogo.svg'
 import ScanIT from '../assests/scanIT.png'
 import Quick from '../assests/quickdrapp.png'
+import leaders from '../assests/logo-BmUjM7wK.png'
+import { link } from 'framer-motion/client'
+import whouse from '../assests/warehouse.png'
+import law from '../assests/logotest.png'
+import car from '../assests/Carpool.jpeg'
+import fashion from '../assests/logo.png'
 
 export default function Projects() {
   const [currentPage, setCurrentPage] = useState(1)
@@ -19,6 +25,7 @@ export default function Projects() {
         'Thamani Online is a real-time supply system aimed at curbing bulk break and payment issues in the retail space.',
       skills: ['Node JS', 'React JS', 'MongoDB'],
       image: thamani,
+      link: 'https://thamanionline.com/',
     },
     {
       title: 'Shamba iko Net',
@@ -26,6 +33,7 @@ export default function Projects() {
         'A web-based platform serving farmers with real-time market prices and weather updates.',
       skills: ['Node JS', 'React JS', 'MongoDB'],
       image: shamba,
+      link: 'https://shambaikonet.com/',
     },
     {
       title: 'GS1 Kenya ERP',
@@ -33,6 +41,21 @@ export default function Projects() {
         'Barcode management and internal ERP system for GS1 Kenya.',
       skills: ['Node JS', 'React JS', 'MongoDB'],
       image: gs1,
+      link: '#',
+    },
+    {
+      title: 'Leaders Connect',
+      description: 'Website for leadership insights, training sessions, and success stories.',
+      skills: ['React JS', 'Tailwind CSS', 'Vercel'],
+      image: leaders,
+      link: 'https://www.leadersconnectltd.com/',
+    },
+    {
+      title: 'ACES KU',
+      description: 'Website for Kenyatta University Engineering School.',
+      skills: ['React JS', 'Tailwind CSS', 'Netlify'],
+      image: ku,
+      link: 'https://acesweb.netlify.app/',
     },
     {
       title: 'Garage Gem',
@@ -40,12 +63,7 @@ export default function Projects() {
         'Garage management tool capturing customer activity from diagnosis to payment.',
       skills: ['Node JS', 'React JS', 'MongoDB'],
       image: garage,
-    },
-    {
-      title: 'ACES KU',
-      description: 'Website for Kenyatta University Engineering School.',
-      skills: ['React JS', 'Tailwind CSS'],
-      image: ku,
+      link: 'https://github.com/arnoldpollycarp/GarageMS',
     },
     {
       title: 'Sky Tech',
@@ -53,6 +71,7 @@ export default function Projects() {
         'Platform linking Kenyan remote talent to the US job market.',
       skills: ['Elixir (Phoenix)', 'HTML', 'CSS', 'MySQL'],
       image: skytech,
+      link: 'https://garagegem.com/',
     },
     {
       title: 'ScanIT',
@@ -60,6 +79,7 @@ export default function Projects() {
         'Low-level barcode generation system for one-off retail usage.',
       skills: ['Elixir (Phoenix)', 'HTML', 'CSS', 'MySQL'],
       image: ScanIT,
+      link: 'https://github.com/arnoldpollycarp/ScanIT',
     },
     {
       title: 'Quick Drapp',
@@ -67,7 +87,41 @@ export default function Projects() {
         'Web-based system for managing grocery delivery services.',
       skills: ['Elixir (Phoenix)', 'HTML', 'CSS', 'MySQL'],
       image: Quick,
+      link: 'https://github.com/arnoldpollycarp/quickdrap',
     },
+    {
+      title: 'Warehouse Management System',
+      description:
+        'Web-based system for managing warehouse inventory and operations.',
+      skills: ['Elixir (Phoenix)', 'HTML', 'CSS', 'MySQL'],
+      image: whouse,
+      link: 'https://github.com/arnoldpollycarp/warehouse_mgt_app',
+    },
+    {
+      title: 'Lawfirm Management System',
+      description:
+        'Web-based system for managing law firm operations.',
+      skills: ['Elixir (Phoenix)', 'HTML', 'CSS', 'MySQL'],
+      image: law,
+      link: 'https://github.com/arnoldpollycarp/firm_app',
+    },
+    {
+      title: 'Campus Carpooling System',
+      description:
+        'Android system for managing campus carpooling.',
+      skills: ['Java', 'XML', 'SQLite'],
+      image: car,
+      link: 'https://github.com/arnoldpollycarp/campuscarpoolingproject2',
+    },
+    {
+      title: 'Fashion E-commerce App',
+      description:
+        'Web-Based app for managing fashion e-commerce.',
+      skills: ['Java', 'XML', 'SQLite'],
+      image: fashion,
+      link: 'https://github.com/arnoldpollycarp/fashion_app',
+    },
+
   ]
 
   // Pagination logic
@@ -100,9 +154,11 @@ export default function Projects() {
             />
 
             <div className="p-6">
-              <h2 className="text-left text-lg font-semibold">
+              <a href={project.link}>
+                <h2 className="text-left text-lg font-semibold">
                 {project.title}
               </h2>
+              </a>
 
               <p className="text-gray-400 text-left mt-2 text-sm">
                 {project.description}

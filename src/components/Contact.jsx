@@ -20,7 +20,7 @@ export default function Contact() {
         {/* Contact Card */}
         <div className="border p-8 rounded-2xl bg-slate-900 shadow-lg
                         w-[320px] sm:w-[360px] md:w-[420px]">
-          <h2 className="text-2xl font-semibold mb-6">Faith Waigi</h2>
+          <h2 className="text-2xl font-semibold mb-6">Arnold P. <span className='text-blue-300'>Okello</span></h2>
 
           <div className="grid gap-4">
             {contactDetails.map((detail, index) => (
