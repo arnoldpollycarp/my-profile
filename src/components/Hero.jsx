@@ -7,8 +7,8 @@ import cv from '../assests/Arnold_Polycarp_Okello_resume.pdf'
 
 export default function Hero() {
   const socialsList = [
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/', icon: <FaLinkedin />, delay: 900 },
-    { name: 'GitHub', href: 'https://github.com/', icon: <FaGithub />, delay: 1000 },
+    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/arnold-pollycarp-6b28901ab/', icon: <FaLinkedin />, delay: 900 },
+    { name: 'GitHub', href: 'https://github.com/arnoldpollycarp', icon: <FaGithub />, delay: 1000 },
     { name: 'Gmail', href: 'mailto:arnoldpollycarp@gmail.com', icon: <FaGoogle />, delay: 700 },
     { name: 'Facebook', href: 'https://www.facebook.com/clint.milner.733/', icon: <FaFacebook />, delay: 500 },
     { name: 'Instagram', href: 'https://www.instagram.com/arnold_pollycarp/', icon: <FaInstagram />, delay: 600 },
